@@ -1,5 +1,11 @@
 /* GOOGLE FONT IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap');
+:root {
+    --primary: #1e3a5f;
+    --secondary: #2d6cdf;
+    --dark: #0f1c2e;
+    --light: #f4f6f8;
+    --text: #333333;
+}
 
 /* ROOT COLOR THEME */
 :root {

@@ -1,58 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>WDD 131 – Dynamic Web Fundamentals – Kelvin Offei Van-Addo</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Kelvin Offei Van-Addo</title>
 
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals home page for Kelvin Offei Van-Addo. HTML, CSS, and JavaScript practice page with responsive design and dynamic footer.">
-  <meta name="author" content="Kelvin Offei Van-Addo">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals home page for Kelvin Offei Van-Addo. HTML, CSS, JavaScript, responsive web design, and front-end development.">
 
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="scripts/getdates.js" defer></script>
+    <meta name="author" content="Kelvin Offei Van-Addo">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
 
 <body>
 
-  <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <header>
 
-    <nav>
-      <a href="https://www.linkedin.com/in/kelvin-o-van-addo-b3ab91188/" target="_blank">LinkedIn</a>
-      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37" target="_blank">Scripture (Alma 37:37)</a>
-      <a href="#">Final Project</a>
-    </nav>
-  </header>
+        <span id="course-title">
+            WDD 131 – Dynamic Web Fundamentals
+        </span>
 
-  <main>
-    <h1>Kelvin Offei Van-Addo</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/kelvin-o-van-addo-b3ab91188/" target="_blank">LinkedIn</a>
 
-    <section class="card">
-      <h2>About Me</h2>
-      <img src="images/myself.jpg" alt="Photo representing Kelvin">
-      <p>
-        I am a software development student learning HTML, CSS, and JavaScript. I enjoy building web applications and improving my coding skills.
-      </p>
-    </section>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
 
-    <section class="card">
-      <h2>My Interests</h2>
-      <img src="images/interests.jpeg" alt="Interest image">
-      <p>
-        I am technology enthusiast. I enjoy outdoor photograhy and occasional tourism across my country
-      </p>
-    </section>
-  </main>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
+                target="_blank">
+                Alma 37:37
+            </a>
 
-  <footer>
-    <p>
-      © <span id="currentyear"></span> Kelvin Offei Van-Addo – Ghana 🔴🟡🟢
-    </p>
+            <a href="#">Final Project</a>
+        </nav>
 
-    <p id="lastModified"></p>
-  </footer>
+    </header>
+
+    <main>
+
+        <h1>Kelvin Offei Van-Addo</h1>
+
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <img src="images/myself.jpg" alt="Portrait of Kelvin Offei Van-Addo">
+
+            <p>
+                I am a Software Development student at BYU–Idaho with interests in web development, entrepreneurship,
+                technology, leadership, and lifelong learning. I enjoy creating solutions that make life easier while
+                balancing faith, family, and personal growth.
+            </p>
+
+            <p>
+                Learn more through these resources:
+            </p>
+
+            <ul>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.byupathway.edu/" target="_blank">BYU-Pathway</a></li>
+            </ul>
+
+        </section>
+
+        <section class="card">
+
+            <h2>My Interests</h2>
+
+            <img src="images/interests.jpeg"
+                alt="Laptop and workspace representing software development and technology interests">
+
+            <p>
+                I enjoy software engineering, business innovation, fitness, adventure, reading, and spending quality
+                time with family while continuously learning new skills.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Kelvin Offei Van-Addo | Ghana 🇬🇭
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
 
 </body>
+
 </html>
