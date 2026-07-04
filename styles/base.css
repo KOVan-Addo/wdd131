@@ -128,3 +128,50 @@ footer {
 footer p {
     margin: 0.3rem 0;
 }
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Make h1 span full width */
+main h1 {
+    grid-column: 1 / -1;
+}
+
+/* Make normal cards behave normally */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 👉 NEW: push links card into right column */
+.links-card {
+    grid-column: 2 / 3;
+}
+
+/* optional styling for list */
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin: 0.5rem 0;
+}
+
+.resource-list a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.resource-list a:hover {
+    text-decoration: underline;
+}
