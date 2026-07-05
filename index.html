@@ -8,103 +8,68 @@
     <title>WDD 131 – Dynamic Web Fundamentals – Kelvin Offei Van-Addo</title>
 
     <meta name="description"
-        content="WDD 131 – Dynamic Web Fundamentals home page for Kelvin Offei Van-Addo. HTML, CSS, JavaScript, responsive web design, and front-end development practice.">
-
+        content="WDD 131 – Dynamic Web Fundamentals home page for Kelvin Offei Van-Addo. HTML, CSS, JavaScript practice page with responsive layout and dynamic footer.">
     <meta name="author" content="Kelvin Offei Van-Addo">
 
-    <!-- Google Fonts (required format) -->
+    <!-- Google Fonts (fix for rubric error) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
 
-    <!-- JavaScript -->
     <script src="scripts/getdates.js" defer></script>
-
 </head>
 
 <body>
 
     <header>
-
-        <span id="course-title">
-            WDD 131 – Dynamic Web Fundamentals
-        </span>
+        <h1>WDD 131: Dynamic Web Fundamentals</h1>
 
         <nav>
             <a href="https://www.linkedin.com/in/kelvin-o-van-addo-b3ab91188/" target="_blank">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
-                target="_blank">Alma 37:37</a>
+                target="_blank">Scripture</a>
             <a href="#">Final Project</a>
         </nav>
-
     </header>
 
     <main>
 
-        <h1>Kelvin Offei Van-Addo</h1>
+        <h2 class="name-title">Kelvin Offei Van-Addo</h2>
 
-        <!-- ABOUT CARD -->
         <section class="card">
+            <h3>About Me</h3>
 
-            <h2>About Me</h2>
+            <div class="about-grid">
+                <img src="images/me.jpg" alt="Photo of Kelvin">
 
-            <img src="images/myself.jpg" alt="Portrait of Kelvin Offei Van-Addo">
-
-            <p>
-                I am a Software Development student at BYU–Idaho. I enjoy learning web technologies,
-                solving problems, and building meaningful digital solutions while balancing family,
-                faith, and personal growth.
-            </p>
-
+                <p>
+                    My name is Kelvin Offei Van-Addo. I am currently learning web development through BYU-Idaho WDD 131.
+                    I enjoy building systems, learning new technologies, and improving my programming skills.
+                    I also enjoy family life, business thinking, and personal growth.
+                </p>
+            </div>
         </section>
 
-        <!-- INTERESTS CARD -->
         <section class="card">
-
-            <h2>My Interests</h2>
-
-            <img src="images/interests.jpeg" alt="Workspace representing software development and technology interests">
-
-            <p>
-                I enjoy technology, entrepreneurship, fitness, reading, adventure, and continuous learning.
-            </p>
-
-        </section>
-
-        <!-- NEW: RESOURCES CARD (GRID COLUMN 2) -->
-        <section class="card links-card">
-
-            <h2>Developer Resources</h2>
-
-            <ul class="resource-list">
-                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
-                <li><a href="https://www.byupathway.edu/" target="_blank">BYU-Pathway</a></li>
+            <h3>Web Dev Resources</h3>
+            <ul id="resourceList">
+                <!-- JS will populate this -->
             </ul>
-
         </section>
 
     </main>
 
     <footer>
-
         <p>
-            &copy; <span id="currentyear"></span>
-            Kelvin Offei Van-Addo | Ghana 🇬🇭
+            © <span id="currentyear"></span> Kelvin Offei Van-Addo – Ghana
         </p>
 
         <p id="lastModified"></p>
-
     </footer>
 
 </body>
 
 </html>
-

@@ -1,17 +1,27 @@
-const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = currentYear;
+// Current year
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 
+// Last modified date
 document.getElementById("lastModified").textContent =
-    "Last Modified: " + document.lastModified;
-const links = document.querySelectorAll(".resource-list a");
+    "Last Modification: " + document.lastModified;
 
-links.forEach(link => {
-    link.addEventListener("mouseenter", () => {
-        link.style.transform = "translateX(5px)";
-        link.style.transition = "0.2s ease";
-    });
+// Dynamic Web Resources List
+const resources = [
+    { name: "GitHub", url: "https://github.com/" },
+    { name: "MDN Web Docs", url: "https://developer.mozilla.org/" },
+    { name: "BYU-Pathway", url: "https://www.byupathway.edu/" }
+];
 
-    link.addEventListener("mouseleave", () => {
-        link.style.transform = "translateX(0)";
-    });
+const list = document.getElementById("resourceList");
+
+resources.forEach(resource => {
+    const li = document.createElement("li");
+
+    const a = document.createElement("a");
+    a.href = resource.url;
+    a.textContent = resource.name;
+    a.target = "_blank";
+
+    li.appendChild(a);
+    list.appendChild(li);
 });
