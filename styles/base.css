@@ -1,7 +1,6 @@
 :root {
-    --green-dark: #1e2e3f;
-    --green-header: #2a5f3f;
-    --green-accent: #4354c6;
+    --primary: #1e3a5f;
+    --accent: #3b8b6b;
 }
 
 * {
@@ -11,30 +10,32 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
+    color: #2d3748;
+    line-height: 1.7;
 }
 
 header {
-    background-color: var(--green-dark);
+    background-color: var(--primary);
     color: white;
     text-align: center;
-    padding: 1.2rem 0;
+    padding: 1.5rem 1rem;
 }
 
-.course-title {
+#course-title {
+    display: block;
     font-family: 'Playfair Display', serif;
-    font-size: 2.1rem;
-    margin-bottom: 0.8rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
@@ -42,119 +43,74 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #ffd700;
+    background-color: var(--accent);
+    transform: translateY(-2px);
 }
 
-.name {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
-    color: var(--green-header);
-    margin: 2rem 0 2.5rem;
-}
-
-.content-grid {
+main {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 2.5rem auto;
     padding: 0 1.5rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
 }
 
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.6rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
 .card {
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.card-header {
-    background-color: var(--green-accent);
-    color: white;
-    padding: 1rem 1.5rem;
-    font-size: 1.4rem;
-    font-weight: 600;
+.card h2 {
+    color: var(--accent);
+    margin-bottom: 1rem;
 }
 
-.card-body {
-    padding: 1.5rem;
-}
-
-.about-card p {
-    margin-bottom: 1.2rem;
+.profile-img,
+.journey-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
 }
 
 .profile-img {
     float: right;
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 45%;
     margin: 0 0 1rem 1.5rem;
-    border: 4px solid #eee;
-}
-
-.location-section {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #eee;
-}
-
-.location-section h3 {
-    margin-bottom: 0.8rem;
-    color: var(--green-header);
-}
-
-.flag-img {
-    width: 120px;
-    height: auto;
-    border: 2px solid #ddd;
-    margin: 0.8rem 0;
-}
-
-.resources-card ul {
-    list-style: none;
-}
-
-.resources-card li {
-    margin: 0.9rem 0;
-}
-
-.resources-card a {
-    color: #26375a;
-    text-decoration: none;
-}
-
-.resources-card a:hover {
-    text-decoration: underline;
-    color: var(--green-accent);
 }
 
 footer {
-    background-color: var(--green-dark);
+    background-color: var(--primary);
     color: white;
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 4rem;
 }
 
-footer p {
-    margin: 0.6rem 0;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
-    .content-grid {
+    main {
         grid-template-columns: 1fr;
     }
 
-    nav ul {
-        gap: 1.5rem;
+    .profile-img {
+        float: none;
+        width: 100%;
     }
 }
