@@ -4,72 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>WDD 131 – Dynamic Web Fundamentals – Kelvin Offei Van-Addo</title>
-
     <meta name="description"
-        content="WDD 131 – Dynamic Web Fundamentals home page for Kelvin Offei Van-Addo. HTML, CSS, JavaScript practice page with responsive layout and dynamic footer.">
+        content="WDD 131 – Dynamic Web Fundamentals. Kelvin Offei Van-Addo. Personal portfolio and course landing page for an adventurous young family man showcasing web development skills.">
     <meta name="author" content="Kelvin Offei Van-Addo">
-
-    <!-- Google Fonts (fix for rubric error) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/base.css">
-
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="base.css">
+    <script src="getdates.js" defer></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals</h1>
-
         <nav>
-            <a href="https://www.linkedin.com/in/kelvin-o-van-addo-b3ab91188/" target="_blank">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
-                target="_blank">Scripture</a>
-            <a href="#">Final Project</a>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/kelvin-o-van-addo-b3ab91188/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
+                        target="_blank">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
         </nav>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
     </header>
 
     <main>
+        <h1>Kelvin Offei Van-Addo</h1>
 
-        <h2 class="name-title">Kelvin Offei Van-Addo</h2>
-
-        <section class="card">
-            <h3>About Me</h3>
-
-            <div class="about-grid">
-                <img src="images/me.jpg" alt="Photo of Kelvin">
-
-                <p>
-                    My name is Kelvin Offei Van-Addo. I am currently learning web development through BYU-Idaho WDD 131.
-                    I enjoy building systems, learning new technologies, and improving my programming skills.
-                    I also enjoy family life, business thinking, and personal growth.
-                </p>
+        <section class="card profile-card">
+            <h2>Welcome</h2>
+            <div class="profile-content">
+                <img src="images/myself.jpg" alt="Kelvin Offei Van-Addo - Adventurous family man" width="280"
+                    height="280">
+                <p>Hi, I'm Kelvin — an early-30s adventurous young family man passionate about technology, family, and
+                    continuous growth. This is my WDD 131 course landing page where I showcase my journey into dynamic
+                    web fundamentals.</p>
             </div>
         </section>
 
-        <section class="card">
-            <h3>Web Dev Resources</h3>
-            <ul id="resourceList">
-                <!-- JS will populate this -->
-            </ul>
+        <section class="card location-card">
+            <h2>My Journey</h2>
+            <img src="images/interests.jpeg" alt="Adventure and family life" width="320" height="200">
+            <p>Balancing family life with a love for exploration and learning. Currently diving deep into web
+                development to create meaningful digital experiences.</p>
+            <p><strong>Favorite Scripture:</strong> Alma 37:37 "</p>
         </section>
-
     </main>
 
     <footer>
-        <p>
-            © <span id="currentyear"></span> Kelvin Offei Van-Addo – Ghana
-        </p>
-
+        <p>&copy; <span id="currentyear"></span> Kelvin Offei Van-Addo | Ghana</p>
         <p id="lastModified"></p>
     </footer>
-
 </body>
 
 </html>
