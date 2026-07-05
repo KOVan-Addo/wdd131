@@ -1,86 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>WDD 131 – Dynamic Web Fundamentals – Kelvin Offei Van-Addo</title>
+
     <meta name="description"
-        content="WDD 131 – Dynamic Web Fundamentals. Kelvin Offei Van-Addo. Personal course homepage for an adventurous young family man learning dynamic web development.">
+        content="WDD 131 – Dynamic Web Fundamentals | Kelvin Offei Van-Addo | HTML, CSS, JavaScript, Responsive Web Design">
+
     <meta name="author" content="Kelvin Offei Van-Addo">
 
-    <!-- Google Fonts Preconnect (Required) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
-        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/base.css">
+
     <script src="scripts/getdates.js" defer></script>
+
 </head>
 
 <body>
+
     <header>
-        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <span id="course-title">
+            WDD 131 - Dynamic Web Fundamentals
+        </span>
+
         <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/kelvin-o-van-addo-b3ab91188/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
-                        target="_blank">Scripture</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
+
+            <a href="https://www.linkedin.com/in/kelvin-o-van-addo-b3ab91188/" target="_blank">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
+                target="_blank">Scripture</a>
+
+            <a href="#">Final Project</a>
+
         </nav>
+
     </header>
 
     <main>
+
         <h1>Kelvin Offei Van-Addo</h1>
 
-        <div class="content-grid">
-            <div class="left-column">
-                <section class="card about-card">
-                    <h2>About Me</h2>
-                    <div class="section-content">
-                        <img src="images/myself.jpg" alt="Kelvin Offei Van-Addo" class="profile-img">
-                        <p>Early-30s adventurous young family man from Ghana. Passionate about faith, family,
-                            technology, and continuous learning. This is my WDD 131 course landing page where I
-                            demonstrate dynamic web development skills.</p>
-                    </div>
-                </section>
+        <section class="card about-card">
 
-                <section class="card journey-card">
-                    <h2>My Journey</h2>
-                    <div class="section-content">
-                        <img src="images/ghana_flag.jpg" alt="Ghana Flag" class="journey-img">
-                        <p>Ghana is a vibrant West African nation known for its rich culture, warm hospitality, and
-                            stunning landscapes. I am proud to represent my homeland while pursuing excellence in web
-                            development.</p>
-                        <p><strong>Favorite Scripture:</strong> Alma 37:37 — “Counsel with the Lord in all thy
-                            doings...”</p>
-                    </div>
-                </section>
+            <h2>About Me</h2>
+
+            <div class="about-top">
+
+                <div class="about-text">
+
+                    <p>
+
+                        My name is Kelvin Offei Van-Addo, and I am a Software Development student at BYU-Idaho with a
+                        passion for building practical technology solutions. I enjoy software engineering, business
+                        strategy, investing, fitness, and lifelong learning. Beyond technology, I value faith, family,
+                        and personal growth, and I enjoy creating projects that solve real-world problems.
+
+                    </p>
+
+                </div>
+
+                <img src="images/myself.jpg" alt="Portrait of Kelvin Offei Van-Addo">
+
             </div>
 
-            <div class="right-column">
-                <section class="card resources-card">
-                    <h2>Web Dev Resources</h2>
-                    <ul>
-                        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
-                        <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-                        <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-                        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-                        <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
-                    </ul>
-                </section>
+            <hr>
+
+            <div class="country-section">
+
+                <h3>Accra, Ghana</h3>
+
+                <div class="country-grid">
+
+                    <figure>
+
+                        <img src="images/ghana-flag.png" alt="Official Flag of Ghana">
+
+                        <figcaption>Official Flag of Ghana</figcaption>
+
+                    </figure>
+
+                    <p>
+
+                        Ghana is located on the west coast of Africa and is known for its rich culture, hospitality,
+                        democratic stability, and beautiful natural landscapes. It is one of Africa's fastest-growing
+                        economies and is recognized worldwide for cocoa production, gold mining, tourism, and innovation
+                        in entrepreneurship and technology.
+
+                    </p>
+
+                </div>
+
             </div>
-        </div>
+
+        </section>
+
+        <section class="card resources-card">
+
+            <h2>Web Dev Resources</h2>
+
+            <ul id="resource-list">
+
+                <!-- Populated by JavaScript -->
+
+            </ul>
+
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Kelvin Offei Van-Addo | Ghana</p>
+
+        <p>
+
+            © <span id="currentyear"></span>
+
+            Kelvin Offei Van-Addo
+
+            🇬🇭 Ghana
+
+        </p>
+
         <p id="lastModified"></p>
+
     </footer>
+
 </body>
 
 </html>
