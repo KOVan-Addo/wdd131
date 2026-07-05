@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 – Dynamic Web Fundamentals – Kelvin Offei Van-Addo</title>
-    <meta name="description"
-        content="WDD 131 – Dynamic Web Fundamentals. Kelvin Offei Van-Addo. Personal portfolio and course landing page for an adventurous young family man showcasing web development skills.">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Kelvin Offei Van-Addo.">
     <meta name="author" content="Kelvin Offei Van-Addo">
     <link rel="stylesheet" href="base.css">
     <script src="getdates.js" defer></script>
-    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
@@ -18,43 +16,60 @@
 
 <body>
     <header>
+        <h1 class="course-title">WDD131 - Dynamic Web Fundamentals</h1>
         <nav>
             <ul>
                 <li><a href="https://www.linkedin.com/in/kelvin-o-van-addo-b3ab91188/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37"
-                        target="_blank">Favorite Scripture</a></li>
+                        target="_blank">Scripture</a></li>
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
-        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
     </header>
 
     <main>
-        <h1>Kelvin Offei Van-Addo</h1>
+        <h2 class="name">Kelvin Offei Van-Addo</h2>
 
-        <section class="card profile-card">
-            <h2>Welcome</h2>
-            <div class="profile-content">
-                <img src="images/myself.jpg" alt="Kelvin Offei Van-Addo - Adventurous family man" width="280"
-                    height="280">
-                <p>Hi, I'm Kelvin — an early-30s adventurous young family man passionate about technology, family, and
-                    continuous growth. This is my WDD 131 course landing page where I showcase my journey into dynamic
-                    web fundamentals.</p>
-            </div>
-        </section>
+        <div class="content-grid">
+            <!-- Left Card - About Me -->
+            <section class="card about-card">
+                <div class="card-header">About Me</div>
+                <div class="card-body">
+                    <p>Hi, I'm Kelvin Offei Van-Addo, an early-30s adventurous young family man from Ghana. I love
+                        faith, family, technology, and exploring new things. This is my WDD 131 course homepage where I
+                        demonstrate dynamic web development skills.</p>
 
-        <section class="card location-card">
-            <h2>My Journey</h2>
-            <img src="images/interests.jpeg" alt="Adventure and family life" width="320" height="200">
-            <p>Balancing family life with a love for exploration and learning. Currently diving deep into web
-                development to create meaningful digital experiences.</p>
-            <p><strong>Favorite Scripture:</strong> Alma 37:37 "</p>
-        </section>
+                    <img src="images/myself.jpg" alt="Kelvin Offei Van-Addo" class="profile-img">
+                </div>
+
+                <!-- Location Section -->
+                <div class="location-section">
+                    <h3>Ghana</h3>
+                    <img src="images/ghana_flag.jpg" alt="Ghana Flag" class="flag-img">
+                    <p>Ghana is a vibrant country in West Africa known for its rich culture, warm hospitality, beautiful
+                        beaches, and strong sense of community. I am proud to call Ghana home.</p>
+                </div>
+            </section>
+
+            <!-- Right Card - Resources -->
+            <section class="card resources-card">
+                <div class="card-header">Web Dev Resources</div>
+                <div class="card-body">
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                        <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                        <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Kelvin Offei Van-Addo | Ghana</p>
+        <p>&copy; <span id="currentyear"></span> Kelvin Offei Van-Addo • Ghana</p>
         <p id="lastModified"></p>
     </footer>
 </body>
