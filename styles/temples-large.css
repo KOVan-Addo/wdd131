@@ -1,21 +1,56 @@
 @media only screen and (min-width:768px) {
 
-#menu {
+
+
+    #menu {
+
         display: none;
-}
 
-.navigation {
+    }
+
+
+
+
+    .navigation {
+
         display: flex;
+
         flex-direction: row;
-        justify-content: space-evenly;
-}
 
-.gallery {
+        justify-content: center;
+
+        gap: 3rem;
+
+        padding: .5rem;
+
+    }
+
+
+
+    .navigation a {
+
+        flex: 0 1 auto;
+
+    }
+
+
+
+    .gallery {
+
         grid-template-columns: repeat(3, 1fr);
-}
 
-.navigation a {
-        flex: 1;
-}
+    }
+
+
+
+    figure img {
+
+        height: 220px;
+
+        object-fit: cover;
+
+    }
+
+
 
 }

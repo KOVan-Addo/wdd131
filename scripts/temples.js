@@ -1,27 +1,45 @@
 const menuButton = document.querySelector("#menu");
+
 const navigation = document.querySelector(".navigation");
 
-// Initial hamburger icon
+
+
 menuButton.textContent = "☰";
 
-// Toggle navigation
+
+
 menuButton.addEventListener("click", () => {
 
-    navigation.classList.toggle("open");
-    menuButton.classList.toggle("open");
 
-    if (menuButton.classList.contains("open")) {
-        menuButton.textContent = "✖";
-    } else {
-        menuButton.textContent = "☰";
+    navigation.classList.toggle("open");
+
+
+
+    if (navigation.classList.contains("open")) {
+
+        menuButton.textContent = "✕";
+
     }
+
+    else {
+
+        menuButton.textContent = "☰";
+
+    }
+
+
 
 });
 
-// Footer year
-document.getElementById("currentyear").textContent =
+
+
+
+
+document.querySelector("#currentyear").textContent =
     new Date().getFullYear();
 
-// Last modified
-document.getElementById("lastModified").textContent =
+
+
+
+document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified}`;

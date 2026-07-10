@@ -1,117 +1,247 @@
 :root {
+
     --primary: #1e3a5f;
     --secondary: #2d6cdf;
     --dark: #12263f;
     --light: #f4f6f8;
     --text: #333;
+
 }
 
+
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
+
+
 body {
+
     font-family: "Poppins", sans-serif;
+
     background: var(--light);
+
     color: var(--text);
+
 }
+
+
 
 /* HEADER */
 
+
 header {
+
     background: var(--primary);
+
     color: white;
-    text-align: center;
+
 }
 
-header h1 {
+
+
+.header-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
     padding: 1rem;
+
 }
 
-/* HAMBURGER */
+
+
+.header-top h1 {
+
+    font-size: 1.7rem;
+
+}
+
+
 
 #menu {
-    font-size: 2rem;
-    border: none;
+
     background: none;
+
+    border: none;
+
     color: white;
+
+    font-size: 2rem;
+
     cursor: pointer;
-    padding: .5rem;
+
 }
+
+
+
 
 /* NAVIGATION */
 
+
 .navigation {
+
     display: none;
+
     flex-direction: column;
+
     background: var(--dark);
+
 }
+
+
 
 .navigation.open {
+
     display: flex;
+
 }
+
+
 
 .navigation a {
+
     color: white;
+
     text-decoration: none;
+
     padding: 1rem;
+
+    text-align: center;
+
+    font-weight: 600;
+
 }
 
+
+
 .navigation a:hover {
+
     background: var(--secondary);
+
 }
+
+
 
 /* MAIN */
 
+
 main {
+
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem;
+
+    margin: auto;
+
+    padding: 2rem 1rem;
+
 }
 
+
+
 main h2 {
+
     text-align: center;
+
+    color: var(--primary);
+
     margin-bottom: 2rem;
+
 }
+
+
 
 /* GALLERY */
 
+
 .gallery {
+
     display: grid;
+
     grid-template-columns: 1fr;
+
     gap: 2rem;
+
 }
+
+
 
 figure {
+
     background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+
+    transition: .3s;
+
 }
+
+
+
+figure:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
 
 figure img {
+
     width: 100%;
+
+    height: auto;
+
     display: block;
-    border-radius: 8px;
+
 }
 
+
+
 figcaption {
-    margin-top: .75rem;
+
     text-align: center;
+
+    padding: .8rem;
+
     font-weight: 600;
+
+    color: var(--primary);
+
 }
+
+
 
 /* FOOTER */
 
+
 footer {
+
     background: var(--primary);
+
     color: white;
+
     text-align: center;
+
     padding: 1rem;
+
+    margin-top: 2rem;
+
 }
 
+
 footer p {
+
     margin: .5rem;
+
 }
