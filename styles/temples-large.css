@@ -1,21 +1,21 @@
 @media only screen and (min-width:768px) {
 
-    #menu {
+#menu {
         display: none;
-    }
+}
 
-    .navigation {
+.navigation {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-    }
+}
 
-    .gallery {
+.gallery {
         grid-template-columns: repeat(3, 1fr);
-    }
+}
 
-    .navigation a {
+.navigation a {
         flex: 1;
-    }
+}
 
 }
