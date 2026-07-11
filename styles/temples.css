@@ -1,247 +1,132 @@
 :root {
-
     --primary: #1e3a5f;
     --secondary: #2d6cdf;
     --dark: #12263f;
     --light: #f4f6f8;
     --text: #333;
-
 }
 
-
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
-
 
 body {
-
     font-family: "Poppins", sans-serif;
-
     background: var(--light);
-
     color: var(--text);
-
 }
 
-
-
-/* HEADER */
-
+/* ---------- HEADER ---------- */
 
 header {
-
     background: var(--primary);
-
     color: white;
-
 }
-
-
 
 .header-top {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 1rem;
-
 }
-
-
 
 .header-top h1 {
-
-    font-size: 1.7rem;
-
+    font-size: 1.8rem;
 }
 
-
+/* Hamburger */
 
 #menu {
-
     background: none;
-
     border: none;
-
     color: white;
-
     font-size: 2rem;
-
     cursor: pointer;
-
 }
 
+/* ---------- NAVIGATION ---------- */
 
-
-
-/* NAVIGATION */
-
-
-.navigation {
-
+nav {
     display: none;
-
     flex-direction: column;
-
     background: var(--dark);
-
 }
 
-
-
-.navigation.open {
-
+nav.open {
     display: flex;
-
 }
 
-
-
-.navigation a {
-
+nav a {
     color: white;
-
     text-decoration: none;
-
     padding: 1rem;
-
     text-align: center;
-
     font-weight: 600;
-
+    transition: background .3s ease;
 }
 
-
-
-.navigation a:hover {
-
+nav a:hover {
     background: var(--secondary);
-
 }
 
-
-
-/* MAIN */
-
+/* ---------- MAIN ---------- */
 
 main {
-
     max-width: 1100px;
-
     margin: auto;
-
     padding: 2rem 1rem;
-
 }
 
-
-
-main h2 {
-
+main h1 {
     text-align: center;
-
     color: var(--primary);
-
     margin-bottom: 2rem;
-
 }
 
-
-
-/* GALLERY */
-
+/* ---------- GALLERY ---------- */
 
 .gallery {
-
     display: grid;
-
     grid-template-columns: 1fr;
-
     gap: 2rem;
-
 }
-
-
 
 figure {
-
     background: white;
-
     border-radius: 12px;
-
     overflow: hidden;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
-
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
     transition: .3s;
-
 }
-
-
 
 figure:hover {
-
-    transform: translateY(-5px);
-
+    transform: translateY(-6px);
 }
-
-
 
 figure img {
-
     width: 100%;
-
-    height: auto;
-
     display: block;
-
 }
-
-
 
 figcaption {
-
     text-align: center;
-
     padding: .8rem;
-
     font-weight: 600;
-
     color: var(--primary);
-
 }
 
-
-
-/* FOOTER */
-
+/* ---------- FOOTER ---------- */
 
 footer {
-
     background: var(--primary);
-
     color: white;
-
     text-align: center;
-
     padding: 1rem;
-
     margin-top: 2rem;
-
 }
 
-
 footer p {
-
     margin: .5rem;
-
 }

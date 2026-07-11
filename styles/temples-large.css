@@ -1,56 +1,28 @@
 @media only screen and (min-width:768px) {
 
-
-
     #menu {
-
         display: none;
-
     }
 
-
-
-
-    .navigation {
-
+    nav {
         display: flex;
-
         flex-direction: row;
-
-        justify-content: center;
-
-        gap: 3rem;
-
-        padding: .5rem;
-
+        justify-content: space-evenly;
+        align-items: center;
+        background: var(--dark);
     }
 
-
-
-    .navigation a {
-
-        flex: 0 1 auto;
-
+    nav a {
+        flex: 1;
     }
-
-
 
     .gallery {
-
         grid-template-columns: repeat(3, 1fr);
-
     }
-
-
 
     figure img {
-
         height: 220px;
-
         object-fit: cover;
-
     }
-
-
 
 }
