@@ -23,16 +23,27 @@ body {
 header {
     background: var(--primary);
     color: white;
+    padding: 0;
 }
 
-.header-top {
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    flex-wrap: wrap;
 }
 
-.header-top h1 {
+.site-title {
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.header-container h1 {
     font-size: 1.8rem;
 }
 
