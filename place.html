@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Switzerland | WDD 131 | Kelvin Offei Van-Addo</title>
+
+    <meta name="description"
+        content="WDD 131 Country Page showcasing Switzerland using responsive HTML, CSS, JavaScript, responsive images, and wind chill calculations.">
+
+    <meta name="author" content="Kelvin Offei Van-Addo">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Switzerland</h1>
+
+    </header>
+
+    <main>
+
+        <picture>
+
+            <source media="(min-width:768px)" srcset="images/switzerland-large.webp">
+
+            <img src="images/switzerland-small.webp" alt="Beautiful landscape of Switzerland">
+
+        </picture>
+
+        <section class="data">
+
+            <h2>Data</h2>
+
+            <p><strong>Capital:</strong> Bern</p>
+            <p><strong>Population:</strong> 8.9 Million</p>
+            <p><strong>Area:</strong> 41,285 km²</p>
+            <p><strong>Languages:</strong> German, French, Italian, Romansh</p>
+            <p><strong>Currency:</strong> Swiss Franc (CHF)</p>
+            <p><strong>Time Zone:</strong> UTC +1</p>
+
+        </section>
+
+        <section class="weather">
+
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temperature">7</span>°C</p>
+
+            <p><strong>Conditions:</strong> Cloudy</p>
+
+            <p><strong>Wind:</strong> <span id="windspeed">12</span> km/h</p>
+
+            <p><strong>Humidity:</strong> 76%</p>
+
+            <p><strong>Wind Chill:</strong>
+
+                <span id="windchill"></span>
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+
+            &copy;
+
+            <span id="currentyear"></span>
+
+            Kelvin Offei Van-Addo | Ghana 🇬🇭
+
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>

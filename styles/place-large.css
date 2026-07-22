@@ -1,0 +1,33 @@
+@media only screen and (min-width:768px) {
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    main {
+        position: relative;
+    }
+
+    picture img {
+        height: 650px;
+        object-fit: cover;
+    }
+
+    .data {
+        position: absolute;
+        top: 60px;
+        left: 40px;
+        width: 290px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 60px;
+        right: 40px;
+        width: 280px;
+    }
+}
