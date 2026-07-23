@@ -66,18 +66,12 @@ header h1 {
 
 }
 
-.navigation {
+.navigation ul {
+
     display: flex;
     flex-direction: column;
-    background: var(--dark);
+    list-style: none;
 
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .3s ease;
-}
-
-.navigation.open {
-    max-height: 400px;
 }
 
 .navigation a {
