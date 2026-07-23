@@ -67,17 +67,17 @@ header h1 {
 }
 
 .navigation {
-
-    display: none;
+    display: flex;
     flex-direction: column;
     background: var(--dark);
 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
 }
 
 .navigation.open {
-
-    display: flex;
-
+    max-height: 400px;
 }
 
 .navigation a {
