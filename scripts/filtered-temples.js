@@ -168,16 +168,13 @@ document.querySelector("#small").addEventListener("click", () => {
         temples.filter(t => t.area < 10000)
 
     );
-
-});
-
 const menu = document.querySelector("#menu");
-const nav = document.querySelector(".navigation");
+const navigation = document.querySelector(".navigation");
 
 menu.addEventListener("click", () => {
 
     menu.classList.toggle("open");
-    nav.classList.toggle("open");
+    navigation.classList.toggle("open");
 
 });
 

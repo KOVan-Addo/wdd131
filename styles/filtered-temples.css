@@ -44,12 +44,13 @@ header h1 {
 
 }
 
+
 #menu {
 
-    font-size: 2rem;
-    border: none;
     background: none;
+    border: none;
     color: white;
+    font-size: 2rem;
     cursor: pointer;
 
 }
@@ -66,6 +67,16 @@ header h1 {
 
 }
 
+
+.navigation {
+
+    display: flex;
+    flex-direction: column;
+    background: var(--dark);
+
+}
+
+
 .navigation ul {
 
     display: flex;
@@ -74,13 +85,35 @@ header h1 {
 
 }
 
+
+.navigation ul {
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease;
+
+}
+
+.navigation.open ul {
+
+    max-height: 500px;
+
+}
+
+.navigation li {
+
+    width: 100%;
+
+}
+
 .navigation a {
 
+    display: block;
     color: white;
     text-decoration: none;
+    text-align: center;
     padding: 1rem;
     font-weight: 600;
-    text-align: center;
 
 }
 
