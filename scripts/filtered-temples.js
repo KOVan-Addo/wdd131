@@ -83,30 +83,31 @@ const temples = [
 ];
 
 const gallery = document.querySelector(".gallery");
+const pageTitle = document.querySelector("#page-title");
 
-function displayTemples(filtered) {
+function displayTemples(templesList) {
 
     gallery.innerHTML = "";
 
-    filtered.forEach(temple => {
+    templesList.forEach((temple) => {
 
         const card = document.createElement("figure");
 
         card.innerHTML = `
-<img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+            <img src="${temple.imageUrl}"
+                 alt="${temple.templeName}"
+                 loading="lazy">
 
-<figcaption>
+            <figcaption>
+                <h3>${temple.templeName}</h3>
 
-<h3>${temple.templeName}</h3>
+                <p><strong>Location:</strong> ${temple.location}</p>
 
-<p><strong>Location:</strong> ${temple.location}</p>
+                <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
 
-<p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-
-<p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-
-</figcaption>
-`;
+                <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+            </figcaption>
+        `;
 
         gallery.appendChild(card);
 
@@ -116,28 +117,35 @@ function displayTemples(filtered) {
 
 displayTemples(temples);
 
-document.querySelector("#home").addEventListener("click", () => {
+document.querySelector("#home").addEventListener("click", (e) => {
 
-    document.querySelector("h2").textContent = "Home";
+    e.preventDefault();
+
+    pageTitle.textContent = "Temple Album";
+
     displayTemples(temples);
 
 });
 
-document.querySelector("#old").addEventListener("click", () => {
+document.querySelector("#old").addEventListener("click", (e) => {
 
-    document.querySelector("h2").textContent = "Old Temples";
+    e.preventDefault();
+
+    pageTitle.textContent = "Old Temples";
 
     displayTemples(
 
-        temples.filter(t => parseInt(t.dedicated) >= 0 && parseInt(t.dedicated) < 1900)
+        temples.filter(t => parseInt(t.dedicated) < 1900)
 
     );
 
 });
 
-document.querySelector("#new").addEventListener("click", () => {
+document.querySelector("#new").addEventListener("click", (e) => {
 
-    document.querySelector("h2").textContent = "New Temples";
+    e.preventDefault();
+
+    pageTitle.textContent = "New Temples";
 
     displayTemples(
 
@@ -147,9 +155,11 @@ document.querySelector("#new").addEventListener("click", () => {
 
 });
 
-document.querySelector("#large").addEventListener("click", () => {
+document.querySelector("#large").addEventListener("click", (e) => {
 
-    document.querySelector("h2").textContent = "Large Temples";
+    e.preventDefault();
+
+    pageTitle.textContent = "Large Temples";
 
     displayTemples(
 
@@ -159,21 +169,27 @@ document.querySelector("#large").addEventListener("click", () => {
 
 });
 
-document.querySelector("#small").addEventListener("click", () => {
+document.querySelector("#small").addEventListener("click", (e) => {
 
-    document.querySelector("h2").textContent = "Small Temples";
+    e.preventDefault();
+
+    pageTitle.textContent = "Small Temples";
 
     displayTemples(
 
         temples.filter(t => t.area < 10000)
 
     );
+
+});
+
 const menu = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
 menu.addEventListener("click", () => {
 
     menu.classList.toggle("open");
+
     navigation.classList.toggle("open");
 
 });
