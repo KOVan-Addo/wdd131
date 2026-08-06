@@ -1,0 +1,105 @@
+:root {
+    --primary: #3b0639;
+    --secondary: #f1e8f0;
+    --accent: #d9a441;
+    --text: #171717;
+    --background: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text);
+    background: var(--background);
+    line-height: 1.5;
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+main {
+    max-width: 700px;
+    min-height: 55vh;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.confirmation {
+    background: var(--secondary);
+    border: 1px solid #b8b1b8;
+    border-radius: 6px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.confirmation h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.confirmation p {
+    margin: 0.75rem 0;
+}
+
+.confirmation strong {
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.confirmation a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.2rem;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.confirmation a:hover {
+    background: var(--accent);
+    color: var(--text);
+}
+
+.confirmation a:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.35rem;
+}
+
+@media screen and (min-width: 700px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .confirmation {
+        padding: 3rem;
+    }
+
+}
