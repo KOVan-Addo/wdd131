@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kelvin Offei Van-Addo">
+    <meta name="description"
+        content="Contact Egg-Inn to ask about egg availability, request an order, or make an enquiry for household or business supplies.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order or Contact Egg-Inn</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="styles/egg-inn.css">
+    <link rel="stylesheet" href="styles/egg-inn-large.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-content">
+
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="Egg-Inn logo" class="logo-icon">
+                <span>Egg-Inn</span>
+            </a>
+
+            <button id="menu" class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="navigation" aria-label="Main navigation">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Our Eggs</a></li>
+                    <li><a class="active" href="contact.html" aria-current="page">Order / Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="page-intro">
+
+            <p class="eyebrow">GET IN TOUCH</p>
+
+            <h1>Tell us what you need.</h1>
+
+            <p>
+                Complete the form below to send an order enquiry or ask about
+                our egg supplies.
+            </p>
+
+        </section>
+
+        <section class="form-section">
+
+            <form id="orderForm" action="thankyou.html" method="get">
+
+                <fieldset>
+
+                    <legend>Your Information</legend>
+
+                    <label for="name">
+                        Full Name <span class="required" aria-hidden="true">*</span>
+                    </label>
+
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+
+                    <label for="email">
+                        Email Address <span class="required" aria-hidden="true">*</span>
+                    </label>
+
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Order Enquiry</legend>
+
+                    <label for="customerType">
+                        Customer Type <span class="required" aria-hidden="true">*</span>
+                    </label>
+
+                    <select id="customerType" name="customerType" required>
+
+                        <option value="" disabled selected>
+                            Select an option...
+                        </option>
+
+                        <option value="household">
+                            Household
+                        </option>
+
+                        <option value="restaurant">
+                            Restaurant / Food Business
+                        </option>
+
+                        <option value="retailer">
+                            Retailer
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                    <label for="quantity">
+                        Quantity Needed <span class="required" aria-hidden="true">*</span>
+                    </label>
+
+                    <select id="quantity" name="quantity" required>
+
+                        <option value="" disabled selected>
+                            Select a quantity...
+                        </option>
+
+                        <option value="small">
+                            Small quantity
+                        </option>
+
+                        <option value="medium">
+                            Medium quantity
+                        </option>
+
+                        <option value="large">
+                            Large quantity
+                        </option>
+
+                        <option value="recurring">
+                            Recurring supply
+                        </option>
+
+                    </select>
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea id="message" name="message" rows="6"
+                        placeholder="Tell us about your order or enquiry..."></textarea>
+
+                </fieldset>
+
+                <p class="required-note">
+                    <span class="required" aria-hidden="true">*</span>
+                    Required field
+                </p>
+
+                <button class="button primary-button" type="submit">
+                    Send Enquiry
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a class="logo footer-logo" href="index.html">
+                    <img src="images/logo.png" alt="Egg-Inn logo" class="logo-icon">
+                    <span>Egg-Inn</span>
+                </a>
+
+                <p>Fresh eggs - all your way!</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="products.html">Our Eggs</a>
+                <a href="references.html">References</a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                Egg-Inn | KO. V 🇬🇭 Ghana
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

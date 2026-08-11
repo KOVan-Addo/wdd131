@@ -1,0 +1,60 @@
+@media screen and (min-width: 768px) {
+
+    .header-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .navigation a {
+        padding: 0.6rem 0.9rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-section,
+    .info-section {
+        grid-template-columns: 1fr auto;
+        padding: 3rem;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        margin-top: 0;
+        gap: 1.5rem;
+    }
+
+}
