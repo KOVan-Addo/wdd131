@@ -1,7 +1,12 @@
 const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+const navigation = document.querySelector("#main-navigation");
+
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
+
+const orderForm = document.querySelector("#orderForm");
+const productList = document.querySelector("#productSummary");
+
 
 const eggProducts = [
     {
@@ -21,12 +26,13 @@ const eggProducts = [
     }
 ];
 
+
 function setFooterInformation() {
 
     const year = new Date().getFullYear();
 
     if (currentYear) {
-        currentYear.textContent = `${year}`;
+        currentYear.textContent = year;
     }
 
     if (lastModified) {
@@ -34,11 +40,16 @@ function setFooterInformation() {
     }
 }
 
+
 function toggleNavigation() {
+
+    if (!menuButton || !navigation) {
+        return;
+    }
 
     const isOpen = navigation.classList.toggle("open");
 
-    menuButton.setAttribute("aria-expanded", `${isOpen}`);
+    menuButton.setAttribute("aria-expanded", isOpen);
 
     if (isOpen) {
         menuButton.textContent = "✕";
@@ -49,9 +60,8 @@ function toggleNavigation() {
     }
 }
 
-function recordOrderInterest() {
 
-    const orderForm = document.querySelector("#orderForm");
+function recordOrderInterest() {
 
     if (!orderForm) {
         return;
@@ -75,9 +85,8 @@ function recordOrderInterest() {
     });
 }
 
-function displayProductSummary() {
 
-    const productList = document.querySelector("#productSummary");
+function displayProductSummary() {
 
     if (!productList) {
         return;
@@ -98,9 +107,11 @@ function displayProductSummary() {
     });
 }
 
+
 if (menuButton && navigation) {
     menuButton.addEventListener("click", toggleNavigation);
 }
+
 
 setFooterInformation();
 recordOrderInterest();
