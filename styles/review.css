@@ -1,9 +1,9 @@
 :root {
-    --primary: #3b0639;
-    --secondary: #f1e8f0;
-    --accent: #d9a441;
-    --text: #171717;
-    --background: #ffffff;
+    --primary: #3b0035;
+    --background: #f5f1f5;
+    --text: #111;
+    --white: #fff;
+    --accent: #302080;
 }
 
 * {
@@ -13,17 +13,20 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    color: var(--text);
+    font-family: Poppins, sans-serif;
     background: var(--background);
+    color: var(--text);
     line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background: var(--primary);
-    color: white;
-    text-align: center;
+    color: var(--white);
     padding: 1.25rem;
+    text-align: center;
 }
 
 header h1 {
@@ -31,18 +34,19 @@ header h1 {
 }
 
 main {
+    flex: 1;
     max-width: 700px;
-    min-height: 55vh;
+    width: 100%;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .confirmation {
-    background: var(--secondary);
-    border: 1px solid #b8b1b8;
-    border-radius: 6px;
-    padding: 2rem 1.5rem;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
     text-align: center;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
 }
 
 .confirmation h2 {
@@ -51,20 +55,15 @@ main {
 }
 
 .confirmation p {
-    margin: 0.75rem 0;
-}
-
-.confirmation strong {
-    color: var(--primary);
-    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .confirmation a {
     display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.7rem 1.2rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
     background: var(--primary);
-    color: white;
+    color: var(--white);
     text-decoration: none;
     border-radius: 4px;
     font-weight: 600;
@@ -72,34 +71,15 @@ main {
 
 .confirmation a:hover {
     background: var(--accent);
-    color: var(--text);
-}
-
-.confirmation a:focus {
-    outline: 3px solid var(--accent);
-    outline-offset: 3px;
 }
 
 footer {
     background: var(--primary);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 1.25rem;
-    margin-top: 2rem;
 }
 
 footer p {
-    margin: 0.35rem;
-}
-
-@media screen and (min-width: 700px) {
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .confirmation {
-        padding: 3rem;
-    }
-
+    margin: 0.25rem;
 }
