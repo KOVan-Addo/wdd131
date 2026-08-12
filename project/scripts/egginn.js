@@ -1,5 +1,3 @@
-"use strict";
-
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector("#main-navigation");
 
@@ -27,10 +25,6 @@ const eggProducts = [
     }
 ];
 
-/* =========================
-   FOOTER INFORMATION
-   ========================= */
-
 function setFooterInformation() {
     const year = new Date().getFullYear();
 
@@ -39,14 +33,9 @@ function setFooterInformation() {
     }
 
     if (lastModified) {
-        lastModified.textContent =
-            `Last Modified: ${document.lastModified}`;
+        lastModified.textContent = `Last Modified: ${document.lastModified}`;
     }
 }
-
-/* =========================
-   MOBILE NAVIGATION
-   ========================= */
 
 function toggleNavigation() {
     if (!menuButton || !navigation) {
@@ -55,29 +44,16 @@ function toggleNavigation() {
 
     const isOpen = navigation.classList.toggle("open");
 
-    menuButton.setAttribute(
-        "aria-expanded",
-        String(isOpen)
-    );
+    menuButton.setAttribute("aria-expanded", String(isOpen));
 
     if (isOpen) {
-        menuButton.innerHTML = '<span aria-hidden="true">✕</span>';
-        menuButton.setAttribute(
-            "aria-label",
-            "Close navigation menu"
-        );
+        menuButton.textContent = "✕";
+        menuButton.setAttribute("aria-label", "Close navigation menu");
     } else {
-        menuButton.innerHTML = '<span aria-hidden="true">☰</span>';
-        menuButton.setAttribute(
-            "aria-label",
-            "Open navigation menu"
-        );
+        menuButton.textContent = "☰";
+        menuButton.setAttribute("aria-label", "Open navigation menu");
     }
 }
-
-/* =========================
-   CLOSE MENU AFTER NAVIGATION
-   ========================= */
 
 function closeNavigation() {
     if (!menuButton || !navigation) {
@@ -85,20 +61,10 @@ function closeNavigation() {
     }
 
     navigation.classList.remove("open");
-
     menuButton.setAttribute("aria-expanded", "false");
-
-    menuButton.innerHTML = '<span aria-hidden="true">☰</span>';
-
-    menuButton.setAttribute(
-        "aria-label",
-        "Open navigation menu"
-    );
+    menuButton.textContent = "☰";
+    menuButton.setAttribute("aria-label", "Open navigation menu");
 }
-
-/* =========================
-   ORDER FORM
-   ========================= */
 
 function recordOrderInterest() {
     if (!orderForm) {
@@ -106,12 +72,8 @@ function recordOrderInterest() {
     }
 
     orderForm.addEventListener("submit", () => {
-
-        const customerType =
-            document.querySelector("#customerType")?.value || "";
-
-        const quantity =
-            document.querySelector("#quantity")?.value || "";
+        const customerType = document.querySelector("#customerType")?.value;
+        const quantity = document.querySelector("#quantity")?.value;
 
         const orderData = {
             customerType: customerType,
@@ -126,10 +88,6 @@ function recordOrderInterest() {
     });
 }
 
-/* =========================
-   PRODUCT SUMMARY
-   ========================= */
-
 function displayProductSummary() {
     if (!productList) {
         return;
@@ -138,44 +96,24 @@ function displayProductSummary() {
     productList.innerHTML = "";
 
     eggProducts.forEach((product) => {
-
         const item = document.createElement("li");
 
-        const productName = document.createElement("strong");
-        productName.textContent = product.name;
-
-        item.appendChild(productName);
-        item.append(` — ${product.suitableFor}`);
+        item.innerHTML = `
+            <strong>${product.name}</strong> —
+            ${product.suitableFor}
+        `;
 
         productList.appendChild(item);
     });
 }
 
-/* =========================
-   EVENT LISTENERS
-   ========================= */
-
 if (menuButton && navigation) {
+    menuButton.addEventListener("click", toggleNavigation);
 
-    menuButton.addEventListener(
-        "click",
-        toggleNavigation
-    );
-
-    const navigationLinks =
-        navigation.querySelectorAll("a");
-
-    navigationLinks.forEach((link) => {
-        link.addEventListener(
-            "click",
-            closeNavigation
-        );
+    navigation.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeNavigation);
     });
 }
-
-/* =========================
-   INITIALIZE
-   ========================= */
 
 setFooterInformation();
 recordOrderInterest();
