@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="author" content="Kelvin Offei Van-Addo">
     <meta name="description"
-        content="Egg-Inn provides fresh, quality eggs for homes, families, food businesses, and customers looking for convenient egg supplies in Ghana.">
+        content="Explore Egg-Inn egg supply options for households, families, restaurants, retailers, and food businesses in Ghana.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Egg-Inn | Fresh Eggs - All Your Way!</title>
+    <title>Our Eggs | Egg-Inn</title>
 
     <link rel="icon" href="images/logo.png">
 
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/egg-inn.css">
     <link rel="stylesheet" href="styles/egg-inn-large.css">
 
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/egginn.js" defer></script>
 </head>
 
 <body>
@@ -35,15 +35,25 @@
 
             <button id="menu" class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
                 aria-controls="main-navigation">
-                ☰
+                <span aria-hidden="true">☰</span>
             </button>
 
             <nav id="main-navigation" class="navigation" aria-label="Main navigation">
                 <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="products.html">Our Eggs</a></li>
-                    <li><a href="contact.html">Order / Contact</a></li>
-                    <li><a href="references.html">References</a></li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="products.html" aria-current="page">
+                            Our Eggs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Order / Contact</a>
+                    </li>
+                    <li>
+                        <a href="references.html">References</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -53,103 +63,130 @@
 
     <main>
 
-        <section class="hero">
+        <section class="page-intro">
 
-            <div class="hero-content">
+            <p class="eyebrow">OUR EGGS</p>
 
-                <p class="eyebrow">FRESH • QUALITY • RELIABLE</p>
+            <h1>Eggs for the way you need them.</h1>
 
-                <h1>Fresh eggs - All your way!</h1>
+            <p>
+                Whether you're shopping for your household or looking for a
+                dependable supply for your business, Egg-Inn is here to help.
+            </p>
 
-                <p>
-                    Egg-Inn makes it easier for homes, families, restaurants,
-                    bakeries, and food businesses to get quality eggs when they
-                    need them - it's all about you.
-                </p>
+        </section>
 
-                <div class="hero-actions">
+        <section class="product-grid">
 
-                    <a class="button primary-button" href="products.html">
-                        Explore Our Eggs
-                    </a>
+            <article class="product-card">
 
-                    <a class="button secondary-button" href="contact.html">
-                        Place an Order
+                <div class="product-image">
+                    <img src="images/egginnhero.webp" alt="Fresh eggs suitable for household use" width="800"
+                        height="600" loading="lazy">
+                </div>
+
+                <div class="product-content">
+
+                    <p class="product-label">HOUSEHOLD</p>
+
+                    <h2>Home Egg Pack</h2>
+
+                    <p>
+                        A convenient option for individuals and households
+                        looking for fresh eggs for everyday meals.
+                    </p>
+
+                    <a class="text-link" href="contact.html">
+                        Enquire about this option →
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
-            <div class="hero-image">
-                <img src="images/egginnhero.webp" alt="Fresh eggs prepared for customers" width="800" height="600">
-            </div>
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/egginnhero.webp" alt="Fresh eggs for regular family use" width="800" height="600"
+                        loading="lazy">
+                </div>
+
+                <div class="product-content">
+
+                    <p class="product-label">FAMILY</p>
+
+                    <h2>Family Egg Supply</h2>
+
+                    <p>
+                        Designed for regular household use when your family
+                        needs a dependable supply of eggs.
+                    </p>
+
+                    <a class="text-link" href="contact.html">
+                        Enquire about this option →
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <img src="images/egginnhero.webp" alt="Fresh eggs prepared for restaurants and food businesses"
+                        width="800" height="600" loading="lazy">
+                </div>
+
+                <div class="product-content">
+
+                    <p class="product-label">BUSINESS</p>
+
+                    <h2>Business Egg Supply</h2>
+
+                    <p>
+                        A flexible option for restaurants, bakeries, retailers,
+                        and other food businesses that need eggs regularly.
+                    </p>
+
+                    <a class="text-link" href="contact.html">
+                        Enquire about this option →
+                    </a>
+
+                </div>
+
+            </article>
 
         </section>
 
-        <section class="welcome section-container">
+        <section class="info-section">
 
             <div>
-                <p class="eyebrow">WHY EGG-INN?</p>
 
-                <h2>Good eggs. Simple service.</h2>
+                <p class="eyebrow">NOT SURE WHAT YOU NEED?</p>
 
-                <p>
-                    Whether you need eggs for your home or your food business,
-                    Egg-Inn focuses on convenient ordering and dependable
-                    quality.
-                </p>
-            </div>
-
-            <div class="feature-grid">
-
-                <article class="feature-card">
-                    <span class="feature-icon" aria-hidden="true">🥚</span>
-                    <h3>Quality</h3>
-                    <p>
-                        We focus on providing eggs that are suitable for
-                        everyday meals and food preparation.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <span class="feature-icon" aria-hidden="true">📦</span>
-                    <h3>Convenience</h3>
-                    <p>
-                        Choose the quantity you need and contact us to discuss
-                        your order.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <span class="feature-icon" aria-hidden="true">🤝</span>
-                    <h3>For Everyone</h3>
-                    <p>
-                        We serve households as well as customers who need eggs
-                        for egg-related businesses.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-        <section class="cta-section">
-
-            <div>
-                <p class="eyebrow">READY TO ORDER?</p>
-
-                <h2>Let's get eggs to your table.</h2>
+                <h2>Tell us what you're looking for.</h2>
 
                 <p>
-                    View our available egg options or send us your order
-                    request.
+                    Every customer has different needs. Send us an enquiry and
+                    we'll discuss the quantity and supply option that works
+                    best for you.
                 </p>
+
             </div>
 
             <a class="button primary-button" href="contact.html">
-                Contact Egg-Inn
+                Make an Enquiry
             </a>
+
+        </section>
+
+        <section class="section-container">
+
+            <p class="eyebrow">AT A GLANCE</p>
+
+            <h2>Our supply options</h2>
+
+            <ul id="productSummary" class="product-summary"></ul>
 
         </section>
 

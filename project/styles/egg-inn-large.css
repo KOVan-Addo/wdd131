@@ -1,7 +1,6 @@
 @media screen and (min-width: 768px) {
 
     .header-content {
-        display: flex;
         flex-wrap: nowrap;
     }
 
@@ -11,7 +10,11 @@
 
     .navigation {
         display: block;
+
+        flex-basis: auto;
         width: auto;
+
+        margin-top: 0;
         margin-left: auto;
     }
 
@@ -19,7 +22,6 @@
         flex-direction: row;
         align-items: center;
         gap: 0.5rem;
-        padding-top: 0;
     }
 
     .navigation a {
@@ -28,6 +30,7 @@
 
     .hero {
         grid-template-columns: 1fr 1fr;
+
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
@@ -43,6 +46,7 @@
     .cta-section,
     .info-section {
         grid-template-columns: 1fr auto;
+
         padding: 3rem;
     }
 
@@ -54,6 +58,7 @@
 
     .footer-links {
         flex-direction: row;
+
         margin-top: 0;
         gap: 1.5rem;
     }
